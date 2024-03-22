@@ -10,4 +10,4 @@ RUN poetry install
 
 EXPOSE 8502
 
-ENTRYPOINT [ "poetry", "run", "streamlit", "run", "app.py", "--server.port=8502","--server.adress=127.0.0.0" ]
+ENTRYPOINT [ "poetry", "run", "streamlit", "run", "app.py", "--server.port=8502", "--server.address=0.0.0.0" ]
